@@ -1,29 +1,37 @@
-# Welcome to Colyseus!
+# Mini Chat - Backend
 
-This project has been created using [⚔️ `create-colyseus-app`](https://github.com/colyseus/create-colyseus-app/) - an npm init template for kick starting a Colyseus project in TypeScript.
+Este é o projeto backend para o Mini Chat, utilizando a biblioteca "Colyseus.js" e outras dependências relacionadas. Para executar este projeto, você precisará ter o Node.js instalado em seu sistema.
 
-[Documentation](http://docs.colyseus.io/)
+## Bibliotecas Utilizadas
 
-## :crossed_swords: Usage
+A seguir, estão listadas as principais bibliotecas utilizadas neste projeto:
+
+- [@colyseus/monitor](https://www.npmjs.com/package/@colyseus/monitor) - ^0.15.0
+- [@colyseus/playground](https://www.npmjs.com/package/@colyseus/playground) - ^0.15.3
+- [@colyseus/tools](https://www.npmjs.com/package/@colyseus/tools) - ^0.15.0
+- [colyseus](https://www.npmjs.com/package/colyseus) - ^0.15.0
+- [express](https://www.npmjs.com/package/express) - ^4.18.2
+
+## Como Instalar
+
+Para instalar as dependências necessárias para este projeto, você deve ter o [Node.js](https://nodejs.org/) e o npm instalados em seu sistema. Em seguida, execute o seguinte comando no terminal, dentro da pasta do projeto:
 
 ```
-npm start
+npm install
 ```
 
-## Structure
+Isso instalará todas as dependências listadas no arquivo `package.json`.
 
-- `index.ts`: main entry point, register an empty room handler and attach [`@colyseus/monitor`](https://github.com/colyseus/colyseus-monitor)
-- `src/rooms/MyRoom.ts`: an empty room handler for you to implement your logic
-- `src/rooms/schema/MyRoomState.ts`: an empty schema used on your room's state.
-- `loadtest/example.ts`: scriptable client for the loadtest tool (see `npm run loadtest`)
-- `package.json`:
-    - `scripts`:
-        - `npm start`: runs `ts-node-dev index.ts`
-        - `npm test`: runs mocha test suite
-        - `npm run loadtest`: runs the [`@colyseus/loadtest`](https://github.com/colyseus/colyseus-loadtest/) tool for testing the connection, using the `loadtest/example.ts` script.
-- `tsconfig.json`: TypeScript configuration file
+## Scripts Disponíveis
 
+Neste projeto, você pode executar os seguintes scripts:
 
-## License
+- `start`: Inicia o servidor backend usando o comando `tsx watch` para monitorar e recarregar automaticamente quando houver alterações no código.
+- `build`: Compila o projeto para produção utilizando o TypeScript (tsc).
+- `clean`: Remove a pasta de compilação ("build") utilizando a biblioteca "rimraf".
 
-MIT
+## Requisitos
+
+Este projeto requer o Node.js versão 16.13.0 ou superior.
+
+Sinta-se à vontade para explorar e modificar este projeto para aprimorar suas habilidades com o "Colyseus.js" e desenvolvimento de backend com Node.js!
